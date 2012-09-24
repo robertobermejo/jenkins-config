@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Vayamovil" default="build">
-    <target name="build" depends="endors, cache,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpdox,phpunit,phpcb" />
+    <target name="build" depends="vendors, cache,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpdox,phpunit,phpcb" />
     <target name="build-parallel" depends="prepare,lint,tools-parallel,phpunit,phpcb" />
 
     <target name="tools-parallel" description="Run tools in parallel using a maximum of 2 threads.">
